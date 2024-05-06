@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: burlywood;
+    padding: 20px;
+    text-align: center;
+}
+
+#randomMealSection, #mealListSection {
+    margin: 20px;
+    text-align: center;
+}
+
+#mealList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.meal-item {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.meal-item img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+#mealImage {
+    margin-bottom: 20px;
+}
+
+#ingredientsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    max-width: 400px; 
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.image-container {
+    text-align: center;
+    font-weight: bold;
+}
+.image-container img {
+    max-width: 100%; 
+    width: 200px; 
+    height: 200px; 
+    margin-bottom: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .meal-item img {
+        width: 80px;
+        height: 80px;
+    }
+}

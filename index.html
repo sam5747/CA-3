@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What to Cook Today?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to What to Cook Today?</h1>
+        <input type="text" id="searchBar" placeholder="Search meal categories...">
+        <button id="searchButton">Search</button>
+    </header>
+    <!-- Random Meal Section -->
+    <section id="randomMealSection">
+        <h2>Random Meal</h2>
+
+    </section>
+    <!-- List of Searched Meal Categories Section -->
+    <section id="mealListSection" style="display:none;">
+        <h2>Searched Meals</h2>
+        <div id="mealList" class="meal-list">
+
+        </div>
+    </section>
+    <!-- Meal Ingredients Modal -->
+    <div id="ingredientsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Ingredients</h3>
+            <div id="mealImage"></div>
+            <ul id="ingredientsList">
+
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
